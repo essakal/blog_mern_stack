@@ -1,0 +1,132 @@
+.articles {
+    display: flex;
+    /* align-items: ; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article {
+    /* width: calc((100% - 40px) / 3); */
+    width: 420px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    /* padding: 10px; */
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgdiv {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #3e8e41; */
+}
+
+.cat {
+    margin: 10px;
+    /* background-color: rebeccapurple; */
+}
+
+.cat a {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #555;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cat a:hover {
+    background-color: #ddd;
+}
+
+.article h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin: 10px;
+}
+
+.article h5 {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    /* background-color: #3e8e41; */
+    margin: 10px;
+
+}
+
+
+.article h4 {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.article h4 a {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.article h4 a:hover {
+    background-color: #3e8e41;
+}
+
+.article h4>div {
+    display: flex;
+}
+
+.article h4 button svg {
+    display: flex;
+    justify-content: end;
+    color: #4CAF50;
+    transition: .1s ease;
+}
+
+.article h4 button svg:hover {
+    color: #3e8e41;
+}
+
+.article h4>div>* {
+    margin-left: 10px;
+    font-size: 20px;
+    /* color: #aaa;
+    cursor: pointer; */
+    transition: all 0.3s ease-in-out;
+}
+
+/* h4>div>*:hover {
+    color: #555;
+} */
+
+.cat a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #f2f2f2;
+    color: #666;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cat a:hover {
+    background-color: #ddd;
+}

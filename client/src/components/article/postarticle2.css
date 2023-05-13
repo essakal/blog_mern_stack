@@ -1,0 +1,118 @@
+.loginContainer2 {
+    /* background-color: aqua; */
+    background-image: url("https://images.pexels.com/photos/768474/pexels-photo-768474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    min-height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform2 {
+    /* background-color: antiquewhite; */
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px;
+    width: 50%;
+    background-color: rgba(19, 19, 19, 0.9);
+    margin: 20px;
+}
+
+.loginContainer2 h1 {
+    color: rgb(248, 58, 29);
+    /* background-color: aqua; */
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.loginContainer2 {
+    color: white;
+}
+
+.loginContainer2 input,
+.loginContainer2 textarea {
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.loginContainer2 textarea {
+    height: 20vh;
+}
+.loginContainer2 input[type="submit"] {
+    background-color: rgb(248, 58, 29);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.loginContainer2 input[type="text"]:focus,
+.loginContainer2 input[type="password"]:focus,
+.loginContainer2 textarea:focus {
+    /* background-color: aqua; */
+    outline: rgb(248, 58, 29) 3px solid;
+}
+
+.loginContainer2 input[type="submit"]:hover {
+    transform: scale(1.03);
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+.loginContainer2 div {
+    /* background-color: black; */
+    color: black;
+    /* height: 20vh; */
+}
+
+/* ---------------- */
+.tags-input {
+    margin-bottom: 1rem;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #ddd;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.tag button {
+    margin-left: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tag-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+}

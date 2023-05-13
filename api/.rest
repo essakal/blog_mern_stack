@@ -1,0 +1,86 @@
+# user 
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email": "a",
+    "username": "dfqs",
+    "password": "dfqs"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "abdoessakal@gmail.com",
+    "password": "password"
+}
+###
+#category 
+# POST http://localhost:5000/category
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRmcXMiLCJwYXNzd29yZCI6IiQyYiQxMCRDTXY2Q1lBemxseWJtYnluaFZrc3F1enBlQlRmWFNRdTZXdGZoUHYvbVNTVzRXRnlOMzVybSIsImlhdCI6MTY3OTk2NzU2MSwiZXhwIjoxNzExNTI1MTYxfQ.eI_r81bfDhVQRg49zuB4lvOr0nq3rrMOzkuIynFV0mg
+
+# {
+#     "category": "sport"
+# }
+# ###
+# GET http://localhost:5000/category
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRmcXMiLCJwYXNzd29yZCI6IiQyYiQxMCQwOHJHZGQ2S3F3VW82ZVB0Nzk4U0t1elJtZlA0YU1OWExpNjhLck4vNkNINU1uWEViM21XVyIsImlhdCI6MTY3OTk2NzA0NCwiZXhwIjoxNzExNTI0NjQ0fQ.zlLLS0XO3tAY8_0KqRNEPwMPnSfC7KIUrTqskPVoymg
+# ###
+# PUT http://localhost:5000/category/641ef7c004d3b45eb4a21547
+# Content-Type: application/json
+
+# {
+#     "category": "tech2024"
+# }
+# ###
+# DELETE http://localhost:5000/category/641ef7c004d3b45eb4a21547
+###
+#add article
+POST http://localhost:5000/article
+Content-Type: application/json
+
+{
+    "qsdf": "qsfd"
+}
+###
+GET http://localhost:5000/article
+###
+GET http://localhost:5000/article/6423242a058416274e820ba7
+###
+POST http://localhost:5000/cmt/645f849e6333ca134f07c2ed
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZG9lc3Nha2FsQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJFNselZQcWtVU0FtYk5GV3cvOWpUVmVHek9mUktaeG5xNmRoQlVZNzJJV0cxVnBWeVg3d1ZlIiwiaWF0IjoxNjgzOTgyNTkxLCJleHAiOjE3MTU1NDAxOTF9.TKsupEBrPjszAeX-UggAdiMWa1fdFRCESRwAny4ALTI
+Content-Type: application/json
+
+{
+    "user": "645f845e6333ca134f07c2e0",
+    "cmt": "sf cmt khaddam"
+}
+###
+POST http://localhost:5000/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRmcXMiLCJwYXNzd29yZCI6IiQyYiQxMCRHczN0OTYwUVljY25UaGpZOGhwaDFlb0NzUDN4NE15MjdYczJlMDd6YnlLVlFhM0JyR3g3SyIsImlhdCI6MTY3OTg3NzE4MiwiZXhwIjoxNzExNDM0NzgyfQ.vwhyyJmODdHKxxv1C0duxPphL7O_T7NV4c6zR6npk3c
+###
+GET http://localhost:5000/categories
+###
+GET http://localhost:5000/category/sport
+###
+GET http://localhost:5000/search/chxx
+###
+POST http://localhost:5000/daata
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRmcXMiLCJwYXNzd29yZCI6IiQyYiQxMCRHczN0OTYwUVljY25UaGpZOGhwaDFlb0NzUDN4NE15MjdYczJlMDd6YnlLVlFhM0JyR3g3SyIsImlhdCI6MTY3OTg3NzE4MiwiZXhwIjoxNzExNDM0NzgyfQ.vwhyyJmODdHKxxv1C0duxPphL7O_T7NV4c6zR6npk3c
+
+###
+GET http://localhost:5000/mine/642320ab9a8a45c22fe9c9ec
+###
+DELETE http://localhost:5000/article/642320d49a8a45c22fe9c9ef
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiIiwicGFzc3dvcmQiOiIkMmIkMTAkUlljY3RsZjBOU2VYOC9RUGNKNlJvdUlUbmFqamVINzBsM0xNeHlWUHlZbXRpSkIuVmxvV3UiLCJpYXQiOjE2ODI4NTI3NzAsImV4cCI6MTcxNDQxMDM3MH0.0WrVVrRHZgbnMtl8IwfvGc-NItkD8UDkfFP2LrzfFFg
+###
+PUT http://localhost:5000/article/644ed9c27b3fd85996b3a955
+
+{
+    "title": "test",
+    
+}
+###
+GET http://localhost:5000/article/6423242a058416274e820ba7

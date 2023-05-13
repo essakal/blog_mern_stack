@@ -1,0 +1,32 @@
+.search input {
+    padding: 5px 10px;
+    width: 220px;
+    margin: 4px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: .1s ease;
+}
+.search input:focus {
+    outline: 2px solid rgb(248, 58, 29);
+}
+.search input:hover {
+    outline: 2px solid rgb(248, 58, 29);
+}
+.search button {
+    padding: 5px 10px;
+    margin: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(248, 58, 29);
+    color: white;
+    border: none;
+    transition: .3s ease;
+}
+.search button:hover {
+    background-color: rgba(248, 58, 29, 0.9)
+}

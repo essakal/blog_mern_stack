@@ -1,0 +1,31 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.onecat {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  color: #666;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.onecat:hover {
+  background-color: #ddd;
+}
+
+.onecatyes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.onecatyes:hover {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,154 @@
+.loginContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.loginform2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 70%;
+    margin: 20px;
+}
+
+.loginform2 h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.loginform2 label {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.loginform2 input[type="text"],
+.loginform2 textarea,
+.loginform2 input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.loginform2 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.loginform2 input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* styles for tag input */
+.tags-input {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.tags-input .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.tags-input .tag {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.tags-input .tag button {
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.tags-input .tag-input {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.tags-input .tag-input input {
+    flex-grow: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tags-input .tag-input input:focus {
+    outline: none;
+}
+
+.tags-input .tag-input button {
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Style the main container element */
+/* .ck-editor {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.ck-toolbar {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ck-toolbar button {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.ck-editor__editable {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+} */

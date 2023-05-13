@@ -1,0 +1,61 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 27019:27017
+    volumes:
+      - vdata:/data/db
+    networks:
+      - mynet
+  rabbit:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - mynet
+  api:
+    build: ./api/
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongo
+      - rabbit
+    restart: always
+    networks:
+      - mynet
+  client:
+    build: ./client/
+    ports:
+      - 3000:3000
+    depends_on:
+      - rabbit
+    restart: always
+    networks:
+      - mynet
+  notif:
+    build: ./notification/
+    ports:
+      - 3001:3000
+    depends_on:
+      - rabbit
+    restart: always
+    networks:
+      - mynet
+  gateway:
+    image: nginx
+    volumes:
+      - ./Gateway/api.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
+    depends_on:
+      - api
+      - client
+      - notif
+    networks:
+      - mynet
+networks:
+  mynet:
+volumes:
+  vdata:

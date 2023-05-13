@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 0 1rem;
+  /* background-color: #005cbf; */
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 20px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav li a:hover {
+  background-color: #555;
+}
+
+.login {
+  border: 2px solid #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.login:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+/* ---------------------- */
+
+
+.edit-button {
+  background-color: #007bff; /* Set the background color */
+  color: #fff; /* Set the font color */
+  border: none; /* Remove the border */
+  border-radius: 4px; /* Add rounded corners */
+  padding: 8px 16px; /* Add some padding */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  transition: 0.3s ease-in-out; /* Add a transition effect */
+}
+
+/* Hover effect for the edit button */
+.edit-button:hover {
+  background-color: #0062cc; /* Change the background color on hover */
+}
+
+/* Active effect for the edit button */
+.edit-button:active {
+  background-color: #005cbf; /* Change the background color on click */
+}
+
+/* Styles for the delete button */
+.delete-button {
+  background-color: #dc3545; /* Set the background color */
+  color: #fff; /* Set the font color */
+  border: none; /* Remove the border */
+  border-radius: 4px; /* Add rounded corners */
+  padding: 8px 16px; /* Add some padding */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  transition: 0.3s ease-in-out; /* Add a transition effect */
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+  background-color: #c82333; /* Change the background color on hover */
+}
+
+/* Active effect for the delete button */
+.delete-button:active {
+  background-color: #bd2130; /* Change the background color on click */
+}
+
+
+.blog-container {
+  max-width: 800px; /* Set the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 32px; /* Add some padding */
+}
+
+/* Styles for the blog title */
+.blog-title {
+  font-size: 32px; /* Set the font size */
+  font-weight: bold; /* Set the font weight */
+  margin-bottom: 16px; /* Add some margin to the bottom */
+}
+
+/* Styles for the blog image */
+.blog-image {
+  width: 100%; /* Set the width to 100% */
+  max-height: 400px; /* Set the maximum height */
+  object-fit: cover; /* Scale the image to cover the container */
+  margin-bottom: 32px; /* Add some margin to the bottom */
+}
+
+/* Styles for the blog content */
+.blog-content {
+  font-size: 18px; /* Set the font size */
+  line-height: 1.5; /* Set the line height */
+}
+ul, ol {
+  list-style-position: inside;
+}
+
+.comments {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.comments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input, .cmt {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.comments button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.comments button:hover {
+  background-color: #0069d9;
+}
+
+.cmt {
+  margin-top: 20px;
+  border: 1px solid #ebebeb;
+}
+
+.err {
+  /* border-color: #bd2130; */
+  border: 1px solid #bd2130;
+}
+.noerr {
+  /* border-color: #bd2130; */
+  border: 1px solid #ccc;
+}
